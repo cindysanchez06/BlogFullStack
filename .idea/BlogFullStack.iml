@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/blockBackend/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/blockBackend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/blockBackend/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/blockBackend/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockBackend/tests" isTestSource="true" packagePrefix="Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/guzzlehttp/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/broadcasting" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/bus" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/conditionable" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/config" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/console" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/container" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/database" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/events" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/hashing" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/http" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/log" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/macroable" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/pagination" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/pipeline" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/queue" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/session" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/support" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/testing" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/validation" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/illuminate/view" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/laravel/lumen-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/blockBackend/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
