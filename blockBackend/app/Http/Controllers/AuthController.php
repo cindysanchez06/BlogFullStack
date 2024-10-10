@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\User\userService;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-class UserController extends Controller
+class AuthController extends Controller
 {
     protected userService $userService;
 
@@ -14,13 +14,15 @@ class UserController extends Controller
         $this->userService = $userService;
     }
 
-    public function register(Request $request): JsonResponse
+    public function login(Request $request): JsonResponse
     {
         try {
-            $this->userService->createUser($request->all());
-            return response()->json(['message' => 'User registered successfully'], 201);
+            $token = $this->userService->authenticateUser($request->all());
+            return response()->json(['token' => $token], 200);
         } catch (\Exception $e) {
-            return response()->json(['message' => 'User registration failed'], 400);
+            $error = $e->getMessage();
+            return response()->json(['message' => "User login failed $error"], 400);
         }
     }
+
 }

@@ -19,4 +19,16 @@ class userValidationService
             throw new ValidationException($validator);
         }
     }
+
+    public function validateLogin(array $data)
+    {
+        $validator = Validator::make($data, [
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            throw new ValidationException($validator);
+        }
+    }
 }

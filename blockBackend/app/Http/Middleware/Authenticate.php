@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory as Auth;
+use Illuminate\Http\Request;
 
 class Authenticate
 {
@@ -28,15 +29,21 @@ class Authenticate
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  \Closure  $next
-     * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
+    public function handle(Request $request, Closure $next)
     {
-        if ($this->auth->guard($guard)->guest()) {
-            return response('Unauthorized.', 401);
+        $token = $request->header('Authorization');
+        if (!$token) {
+            return response()->json(['message' => 'Token not provided'], 401);
+        }
+        $decodedToken = base64_decode(str_replace('Bearer ', '', $token));
+        list($userId, $expirationTime) = explode('|', $decodedToken);
+        $_SESSION['user_id'] = $userId;
+        if (time() > $expirationTime || is_integer($expirationTime)) {
+            return response()->json(['message' => 'Token has expired'], 401);
         }
 
         return $next($request);

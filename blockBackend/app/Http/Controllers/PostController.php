@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Services\Post\postServiceDatabase;
 use  Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -32,6 +33,18 @@ class PostController extends Controller
         } catch (\Exception $e) {
             return response()->json(['message' => 'Failed to get posts'], 400);
 
+        }
+    }
+
+    public function create(Request $request)
+    {
+        try {
+            $data = $request->all();
+            $this->postServiceDatabase->create($data);
+            return response()->json(['message' => 'Post created successfully']);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to create post'], 400);
         }
     }
 }

@@ -25,6 +25,7 @@ $app = new Laravel\Lumen\Application(
 
 $app->withFacades();
 
+
 // $app->withEloquent();
 
 /*
@@ -112,6 +113,10 @@ $app->router->group([
 ], function ($router) {
     require __DIR__.'/../routes/web.php';
 });
+
+$app->routeMiddleware([
+    'Authenticate' => App\Http\Middleware\Authenticate::class,
+]);
 
 $app->configure('database');
 $app->configure('validation');
