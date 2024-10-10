@@ -1,15 +1,13 @@
 'use client'
 import { useState } from "react"
 import { Login } from "../services/login";
-
+import {useRouter} from 'next/navigation'
 export default () => {
-
+    const router = useRouter()
     const [form, setForm] = useState({
         username: '',
         password: ''
     })
-
-    console.log(form)
 
     const handleChangeUsername = (e) => {
         setForm({...form, username: e.target.value})
@@ -28,6 +26,14 @@ export default () => {
 
 
         const response = await Login(form.username, form.password)
+
+        if (response.success) {
+            //redirect
+            router.push('/post')
+            return
+        }
+
+        alert(response.errorMessage)
     }
     return (
         <div className="flex items-center justify-center flex-col gap-[20px] pt-[200px]">
@@ -38,8 +44,9 @@ export default () => {
                 <div className="flex items-center text-gray-400 border rounded-md">
                     <input 
                         type="text"
-                        placeholder="Sidi Dev"
+                        placeholder="email"
                         id="username"
+                        autoComplete="off"
                         className="w-full p-2.5 ml-2 bg-transparent outline-none"
                         onChange={handleChangeUsername}
                     />
