@@ -18,3 +18,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/api/posts/{categoryId}', 'PostController@index');
+
+$router->post('/api/register', 'UserController@register');

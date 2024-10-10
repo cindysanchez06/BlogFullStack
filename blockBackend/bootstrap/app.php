@@ -23,7 +23,7 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+$app->withFacades();
 
 // $app->withEloquent();
 
@@ -94,8 +94,8 @@ $app->configure('app');
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
-$app->register(Illuminate\Validation\ValidationServiceProvider::class);
 $app->register(Illuminate\Database\DatabaseServiceProvider::class);
+$app->register(Illuminate\Validation\ValidationServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
@@ -114,5 +114,5 @@ $app->router->group([
 });
 
 $app->configure('database');
-
+$app->configure('validation');
 return $app;
