@@ -118,6 +118,10 @@ $app->routeMiddleware([
     'Authenticate' => App\Http\Middleware\Authenticate::class,
 ]);
 
+$app->middleware([
+    App\Http\Middleware\CorsMiddleware::class,
+]);
+
 $app->configure('database');
 $app->configure('validation');
 return $app;
